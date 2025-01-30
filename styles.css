@@ -1,0 +1,96 @@
+:root {
+  --background-dark: #2e2e2e;
+  --text-light: #ffffff;
+  --header-dark: #2e2e2e;
+  --button-dark: #000f9f;
+  --button-hover-dark: #030f8a;
+  --accent-color: #e1251b;
+}
+
+body {
+  background-color: var(--background-dark);
+  color: var(--text-light);
+  font-family: "London Tube", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header {
+  background-color: var(--header-dark);
+  color: var(--text-light);
+  padding: 20px;
+  text-align: center;
+  border-bottom: 5px solid var(--accent-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header img {
+  height: 60px;
+  vertical-align: middle;
+}
+
+header h1 {
+  display: inline;
+  margin-left: 10px;
+  vertical-align: middle;
+  font-size: 24px;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.game-buttons {
+  margin-top: 20px;
+}
+
+.game-buttons a {
+  text-decoration: none;
+  margin: 10px;
+}
+
+.game-buttons a button {
+  padding: 10px 20px;
+  background-color: var(--button-dark);
+  border: none;
+  color: var(--text-light);
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-family: "London Tube", sans-serif; /* Apply London Tube font */
+}
+
+.game-buttons a button:hover {
+  background-color: var(--button-hover-dark);
+}
+
+footer {
+  background-color: var(--header-dark);
+  color: var(--text-light);
+  text-align: center;
+  padding: 10px;
+  border-top: 5px solid var(--accent-color);
+  margin-top: auto;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  color: var(--text-light);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
